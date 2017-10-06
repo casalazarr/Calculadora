@@ -11,17 +11,20 @@ public class Trigonometrica
     double resultado;
     void Seno()
     {
-        Math.toRadians(operador1);
+        operador1=Math.toRadians(operador1);
         resultado=Math.sin(operador1);
+        
     }
     void Coseno()
     {
         Math.toRadians(operador1);
         resultado=Math.cos(operador1);
+        Math.toDegrees(resultado);
     }
     void Tangente()
     {
         Math.toRadians(operador1);
         resultado=Math.tan(operador1);
+        Math.toDegrees(resultado);
     }
 }
